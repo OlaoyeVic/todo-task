@@ -1,0 +1,32 @@
+.completed {
+    // width: 100%;
+    overflow: hidden;
+    // padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .checkbox {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        ul {
+            // list-style-type: none;
+            li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                list-style-type: none;
+                input[type='checkbox']{
+                    color: blue;
+                    background-color: #FFFFFF;
+                }
+                span > img {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
