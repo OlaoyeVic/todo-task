@@ -30,6 +30,7 @@
             border: none;
             outline: none;
             background-color: blueviolet;
+            cursor: pointer;
         }
     }
     .checkbox {
@@ -38,9 +39,36 @@
         flex-direction: column;
         align-self: center;
         background-color: #fff;
-        input{
-            color: blueviolet;
-            background-color: #fff;
-        } 
+        ul {
+            list-style-type: none;
+            li {
+                input[type='checkbox']{
+                    color: blue;
+                    background-color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .active .input input {
+        width: 200px;
+        // width: 250px;
+        // padding: 20px;
+    }
+    .active .input .button {
+        width: 75px;
+    }
+    .input {
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+    }
+    .checkbox {
+        margin: 0 20px;
     }
 }

@@ -37,11 +37,19 @@
 
 @media (max-width: 768px) {
     .tabs {
-        padding: 0 20px;
+        padding: 0;
     }
     .tab {
-        padding: 0 20px;
-        width: 30%;
-        padding: 2em 10px;
+        width: 100px;
+    }
+    .panel {
+        padding: 0;
+    }
+    .panel.active {
+        // width: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

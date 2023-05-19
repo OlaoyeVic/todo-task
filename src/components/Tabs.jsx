@@ -26,6 +26,14 @@ const Tabs = () => {
         }
     }
 
+    const handleDeleteItem = (id) => {
+        setItems((prevItems) => {
+            return prevItems.filter((item, index) => {
+                return index !=id
+            })
+        })
+    }
+
     const handleDeleteAll = () => {
         setItems([])
         localStorage.removeItem('todoItems')
@@ -93,9 +101,10 @@ const Tabs = () => {
               <div className={`panel ${checkActive(3, "active")}`}>
                 <Completed 
                     items={items}
+                    setItems={setItems}
                     setNewItem={setNewItem}
                     newItem={newItem}
-                    handleCheckbox={handleCheckbox} 
+                    handleCheckbox={handleCheckbox}
                     handleDeleteAll={handleDeleteAll} 
                 />
               </div>
